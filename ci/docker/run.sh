@@ -37,8 +37,8 @@ docker build \
     -f Dockerfile.hybrid \
     -t $IMAGE_TAG \
     --build-arg TARGET_LIST="$TARGET_LIST" \
-    --build-arg UID="$(id -u)" \
-    --build-arg GID="$(id -g)" \
+    # --build-arg UID="$(id -u)" \
+    # --build-arg GID="$(id -g)" \
     --build-arg IS_INTERACTIVE="$IS_INTERACTIVE" \
     --build-arg CARGO_TARGET_DIR="$CARGO_TARGET_DIR" \
     --build-arg USE_HOST_RUSTC="$USE_HOST_RUSTC" \
