@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:bionic
 MAINTAINER Jan Bujak (j@exia.io)
 
 RUN apt-get update && \
